@@ -4,37 +4,31 @@
     <meta charset="utf-8" />
     <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
     <!-- Replace the content tag with appropriate information -->
-    <meta name="description" content="DESCRIPTION META TAG" />
-    <meta property="og:title" content="SOCIAL MEDIA TITLE TAG" />
+    <meta name="description" content="METAL" />
+    <meta property="og:title" content="METAL" />
     <meta
       property="og:description"
-      content="SOCIAL MEDIA DESCRIPTION TAG TAG"
+      content="METAL: A Multi-Agent Framework for Chart Generation with Test-Time Scaling"
     />
     <meta property="og:url" content="URL OF THE WEBSITE" />
     <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-    <meta property="og:image" content="static/image/your_banner_image.png" />
+    <meta property="og:image" content="static/imgs/teaser.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
 
-    <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG" />
-    <meta
-      name="twitter:description"
-      content="TWITTER BANNER DESCRIPTION META TAG"
-    />
+    <meta name="twitter:title" content="METAL" />
+    <meta name="twitter:description" content="METAL" />
     <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-    <meta
-      name="twitter:image"
-      content="static/images/your_twitter_banner_image.png"
-    />
+    <meta name="twitter:image" content="static/imgs/teaser.png" />
     <meta name="twitter:card" content="summary_large_image" />
     <!-- Keywords for your paper to be indexed by-->
-    <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE" />
+    <meta name="keywords" content="METAL" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>
       METAL: A Multi-Agent Framework for Chart Generation with Test-Time Scaling
     </title>
-    <link rel="icon" type="image/x-icon" href="static/images/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="static/imgs/favicon.ico" />
     <link
       href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
       rel="stylesheet"
@@ -65,10 +59,10 @@
             <div class="column has-text-centered">
               <h1 class="title is-1 publication-title">
                 <img
-                  src="static/images/favicon.ico"
+                  src="static/imgs/favicon.ico"
                   alt="favicon"
-                  width="50"
-                /> METAL
+                  width="52"
+                /><span style="color: rgb(114, 65, 120)">METAL</span>
               </h1>
               <h2 class="subtitle is-3 publication-subtitle">
                 A Multi-Agent Framework for Chart Generation <br />
@@ -137,7 +131,7 @@
                   <!-- Arxiv PDF link -->
                   <span class="link-block">
                     <a
-                      href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf"
+                      href="static/pdfs/[arxiv]metal.pdf"
                       target="_blank"
                       class="external-link button is-normal is-rounded is-dark"
                     >
@@ -163,7 +157,7 @@
                   </span> -->
 
                   <!-- ArXiv abstract Link -->
-                  <span class="link-block">
+                  <!-- <span class="link-block">
                     <a
                       href="https://arxiv.org/abs/<ARXIV PAPER ID>"
                       target="_blank"
@@ -174,7 +168,7 @@
                       </span>
                       <span>arXiv</span>
                     </a>
-                  </span>
+                  </span> -->
 
                   <!-- Github link -->
                   <span class="link-block">
@@ -197,42 +191,60 @@
       </div>
     </section>
 
-    <!-- Teaser video-->
+    <!-- Teaser -->
     <section class="hero teaser">
       <div class="container is-max-desktop">
         <div class="hero-body">
-          <video poster="" id="tree" autoplay controls muted loop height="100%">
-            <!-- Your video here -->
-            <source src="static/videos/banner_video.mp4" type="video/mp4" />
-          </video>
+          <img src="static/imgs/teaser.pdf" alt="Teaser" width="100%" />
+          <br />
+          <br />
           <h2 class="subtitle has-text-centered">
-            Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus
-            tellus, maximus vel lectus at, placerat pretium mi. Maecenas
-            dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut
-            maximus.
+            Direct prompting of current VLMs (e.g. GPT- 4O) often fails to
+            generate charts that accurately repli- cate reference charts,
+            resulting in errors in structure, color, and text alignment. Our
+            proposed approach, METAL, tackle this challenge with iterative
+            refinement through generation, critique, and revision. Emperical
+            result shows that METAL exhibits the phenomenon of test-time
+            scaling: its per- formance increases monotonically as the loga-
+            rithmic computational budget grows from 512 to 8192 tokens.
           </h2>
         </div>
       </div>
     </section>
-    <!-- End teaser video -->
+    <!-- End teaser -->
 
     <!-- Paper abstract -->
     <section class="section hero is-light">
       <div class="container is-max-desktop">
         <div class="columns is-centered has-text-centered">
-          <div class="column is-four-fifths">
+          <div class="column is-11">
             <h2 class="title is-3">Abstract</h2>
             <div class="content has-text-justified">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-                ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna
-                feugiat nibh elementum, et tempor dolor mattis. Donec accumsan
-                enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex
-                eget mauris cursus euismod nec et nibh. Maecenas ac gravida
-                ante, nec cursus dui. Vivamus purus nibh, placerat ac purus
-                eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus
-                gravida commodo. Pellentesque auctor leo vitae sagittis
-                suscipit.
+              <p class="is-size-5">
+                Chart generation aims to generate code to produce charts
+                satisfying the desired visual properties, e.g., texts, layout,
+                color, and type. It has great potential to empower the automatic
+                professional report generation in financial analysis, research
+                presentation, education, and healthcare. In this work, we build
+                a vision-language model (VLM) based multi-agent framework for
+                effective automatic chart generation. Generating high-quality
+                charts requires both strong visual design skills and precise
+                coding capabilities that embed the desired visual properties
+                into code. Such a complex multi-modal reasoning process is
+                difficult for direct prompting of VLMs. To resolve these
+                challenges, we propose METAL, a
+                <i><b>multi-agent</b></i> framework that decomposes the task of
+                chart generation into the iterative collaboration among
+                specialized agents. METAL achieves
+                <b>5.2% improvement in accuracy over the current best result</b>
+                in the chart generation task. The METAL framework exhibits the
+                phenomenon of <b><i>test-time scaling</i></b
+                >: its performance increases monotonically as the logarithmic
+                computational budget grows from 512 to 8192 tokens. In addition,
+                we find that separating different modalities during the critique
+                process of METAL boosts the
+                <b><i>self-correction</i></b> capability of VLMs in the
+                multimodal context.
               </p>
             </div>
           </div>
@@ -241,38 +253,158 @@
     </section>
     <!-- End paper abstract -->
 
+    <!-- Paper Method -->
+    <section class="section hero">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-11">
+            <h2 class="title is-3">Method</h2>
+            <div class="content has-text-justified">
+              <img src="static/imgs/method.pdf" alt="Workflow" width="100%" />
+              <br />
+              <br />
+              <p class="is-size-5">
+                As shown in the figure, METAL is multi-agents system that
+                consists of four specialized agents working in an iterative
+                pipeline: (1) Generation Agent creates initial Python code to
+                reproduce the reference chart, (2) Visual Critique Agent
+                identifies visual discrepancies between the generated and
+                reference charts, (3) Code Critique Agent analyzes the code and
+                provides specific improvement guidelines, and (4) Revision Agent
+                modifies the code based on the critiques. During inference,
+                METAL iteratively refines the generated code until the rendered
+                chart meets a predefined quality threshold or reach maximum
+                attempts limit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End paper method -->
+
     <!-- Image carousel -->
-    <section class="hero is-small">
+    <section class="hero is-light">
       <div class="hero-body">
+        <div class="columns is-centered has-text-centered">
+          <h2 class="title is-3">Results and Analysis</h2>
+        </div>
         <div class="container">
           <div id="results-carousel" class="carousel results-carousel">
             <div class="item">
-              <!-- Your image here -->
-              <img src="static/images/carousel1.jpg" alt="MY ALT TEXT" />
-              <h2 class="subtitle has-text-centered">
-                First image description.
+              <img
+                src="static/imgs/main_result.png"
+                alt="main_result"
+                width="80%"
+                style="
+                  display: block;
+                  margin-left: auto;
+                  margin-right: auto;
+                  border-radius: 15px;
+                  border: 2px solid;
+                "
+              />
+              <h2
+                class="subtitle has-text-centered"
+                style="max-width: 90%; margin: 0 auto"
+              >
+                <br />
+                <b>[1/4] Enhanced Performance</b>:<br /><br />
+                METAL achieves 5.2% improvement in accuracy over the current
+                best result in the chart generation task.
               </h2>
+              <br />
             </div>
+
             <div class="item">
-              <!-- Your image here -->
-              <img src="static/images/carousel2.jpg" alt="MY ALT TEXT" />
-              <h2 class="subtitle has-text-centered">
-                Second image description.
+              <img
+                src="static/imgs/test_time_scaling.png"
+                alt="main_result"
+                width="80%"
+                style="
+                  display: block;
+                  margin-left: auto;
+                  margin-right: auto;
+                  border-radius: 15px;
+                  border: 2px solid;
+                "
+              />
+              <h2
+                class="subtitle has-text-centered"
+                style="max-width: 90%; margin: 0 auto"
+              >
+                <br />
+                <b>[2/4] Test-Time Scaling Phenomenon</b>:<br /><br />METAL
+                exhibits the phenomenon of test-time scaling: its performance
+                increases monotonically as the logarithmic computational budget
+                grows from 512 to 8192 tokens.
               </h2>
+              <br />
             </div>
+
             <div class="item">
-              <!-- Your image here -->
-              <img src="static/images/carousel3.jpg" alt="MY ALT TEXT" />
-              <h2 class="subtitle has-text-centered">
-                Third image description.
+              <img
+                src="static/imgs/ablation.png"
+                alt="main_result"
+                width="40%"
+                style="
+                  display: block;
+                  margin-left: auto;
+                  margin-right: auto;
+                  border-radius: 15px;
+                  border: 2px solid;
+                "
+              />
+              <h2
+                class="subtitle has-text-centered"
+                style="max-width: 80%; margin: 0 auto"
+              >
+                <br />
+                <b>[3/4] Modality-Tailored Critiques Enhanced Self-Correction</b
+                >:<br /><br />We observe that explicitly separating different
+                modalities during the critique process—such as visual evaluation
+                and code analysis—substantially enhances the multimodal self-
+                correction capabilities of VLMs. Ablation study shows that METAL
+                with the separate-critique design achieves a 5.16% improvement
+                over the single-critique baseline (METAL_S).
               </h2>
+              <br />
             </div>
+
             <div class="item">
-              <!-- Your image here -->
-              <img src="static/images/carousel4.jpg" alt="MY ALT TEXT" />
-              <h2 class="subtitle has-text-centered">
-                Fourth image description.
+              <img
+                src="static/imgs/difficulty.png"
+                alt="main_result"
+                width="40%"
+                style="
+                  display: block;
+                  margin-left: auto;
+                  margin-right: auto;
+                  border-radius: 15px;
+                  border: 2px solid;
+                "
+              />
+              <h2
+                class="subtitle has-text-centered"
+                style="max-width: 80%; margin: 0 auto"
+              >
+                <br />
+                <b>[4/4] Robust with Strong Base Models</b>:<br /><br />As shown
+                in the figure above, we compare the performance of METAL to that
+                of Direct Prompting over five iterations across varying chart
+                difficulty levels. METAL with the GPT-4O base model achieved
+                consistent improvements regardless of difficulty. When using
+                LLAMA 3.2-11B as the base model, the performance gains tend to
+                diminish with increasing reference chart complexity, but the im-
+                provements remain substantial. This drop might be due to the
+                limited critique capabilities of the LLAMA 3.2-11B base model.
+                Nonetheless, the flexibility of METAL to replace the base model
+                for different agents allows us to tailor the system
+                optimally—using, for example, a critique-optimized model for
+                critique agents and a generation-focused model for generation
+                agents—to maximize overall performance.
               </h2>
+              <br />
             </div>
           </div>
         </div>
@@ -280,103 +412,42 @@
     </section>
     <!-- End image carousel -->
 
-    <!-- Youtube video -->
-    <section class="hero is-small is-light">
-      <div class="hero-body">
-        <div class="container">
-          <!-- Paper video. -->
-          <h2 class="title is-3">Video Presentation</h2>
-          <div class="columns is-centered has-text-centered">
-            <div class="column is-four-fifths">
-              <div class="publication-video">
-                <!-- Youtube embed code here -->
-                <iframe
-                  src="https://www.youtube.com/embed/JkaxUblCGz0"
-                  frameborder="0"
-                  allow="autoplay; encrypted-media"
-                  allowfullscreen
-                ></iframe>
-              </div>
+    <!-- Paper Case Study -->
+    <section class="section hero">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-11">
+            <h2 class="title is-3">Case Study</h2>
+            <div class="content has-text-justified">
+              <img
+                src="static/imgs/case_study.pdf"
+                alt="CaseStudy"
+                width="100%"
+              />
+              <br />
+              <br />
+              <p class="is-size-5">
+                Case study of METAL’s progressive refinement from initial
+                generation to perfect accuracy. Starting from Round 0’s initial
+                generation (60% color accuracy, 84% text accuracy), the system
+                iteratively improves the output. In Round 1, the system
+                identifies and corrects Y-axis scale issues and missing
+                annotations, achieving 100% text accuracy. Round 2 refines the
+                color representations of distributions, achieving perfect
+                accuracy across all metrics.
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- End youtube video -->
-
-    <!-- Video carousel -->
-    <section class="hero is-small">
-      <div class="hero-body">
-        <div class="container">
-          <h2 class="title is-3">Another Carousel</h2>
-          <div id="results-carousel" class="carousel results-carousel">
-            <div class="item item-video1">
-              <video
-                poster=""
-                id="video1"
-                autoplay
-                controls
-                muted
-                loop
-                height="100%"
-              >
-                <!-- Your video file here -->
-                <source src="static/videos/carousel1.mp4" type="video/mp4" />
-              </video>
-            </div>
-            <div class="item item-video2">
-              <video
-                poster=""
-                id="video2"
-                autoplay
-                controls
-                muted
-                loop
-                height="100%"
-              >
-                <!-- Your video file here -->
-                <source src="static/videos/carousel2.mp4" type="video/mp4" />
-              </video>
-            </div>
-            <div class="item item-video3">
-              <video
-                poster=""
-                id="video3"
-                autoplay
-                controls
-                muted
-                loop
-                height="100%"
-              >
-                \
-                <!-- Your video file here -->
-                <source src="static/videos/carousel3.mp4" type="video/mp4" />
-              </video>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End video carousel -->
-
-    <!-- Paper poster -->
-    <section class="hero is-small is-light">
-      <div class="hero-body">
-        <div class="container">
-          <h2 class="title">Poster</h2>
-
-          <iframe src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        </div>
-      </div>
-    </section>
-    <!--End paper poster -->
+    <!-- End paper case study -->
 
     <!--BibTex citation -->
     <section class="section" id="BibTeX">
       <div class="container is-max-desktop content">
         <h2 class="title">BibTeX</h2>
-        <pre><code>BibTex Code Here</code></pre>
+        <pre><code>BibTex</code></pre>
       </div>
     </section>
     <!--End BibTex citation -->
@@ -397,17 +468,7 @@
                   href="https://nerfies.github.io"
                   target="_blank"
                   >Nerfies</a
-                > project page. You are free to borrow the source code of this
-                website, we just ask that you link back to this page in the
-                footer. <br />
-                This website is licensed under a
-                <a
-                  rel="license"
-                  href="http://creativecommons.org/licenses/by-sa/4.0/"
-                  target="_blank"
-                  >Creative Commons Attribution-ShareAlike 4.0 International
-                  License</a
-                >.
+                > project page.
               </p>
             </div>
           </div>
